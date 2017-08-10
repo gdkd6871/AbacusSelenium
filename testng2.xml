@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+
+<suite name="Abacus_Suite" verbose="1">
+
+	<listeners>
+		<listener class-name="org.testng.reporters.XMLReporter" />
+		<listener class-name="org.testng.reporters.FailedReporter" />
+		<listener class-name="main.java.reporters.HTMLTCReporter" />
+		<listener class-name="main.java.reporters.HTMLReporter" />
+		<listener class-name="main.java.reporters.HTMLStepReporter" />
+		<listener class-name="main.java.reporters.ScreenshotListener" />
+	</listeners>
+
+	<test name="Abacus">
+		<!-- <packages> <package name="main.java.test" /> </packages> -->
+		<classes>
+			<class name="main.java.test.T1347ManageOpportunity" />
+		</classes>
+	</test>
+
+</suite>
